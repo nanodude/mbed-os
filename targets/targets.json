@@ -1152,13 +1152,13 @@
     },
     "WS_OPEN103V": {
         "inherits": ["FAMILY_STM32"],
-        "supported_form_factors": ["ARDUINO", "MORPHO"],
+        "supported_form_factors": [],
         "core": "Cortex-M3",
-        "extra_labels_add": ["STM32F1", "STM32F103RB"],
+        "extra_labels_add": ["STM32F1", "STM32F103VE"],
         "config": {
             "clock_source": {
-                "help": "Mask value : USE_PLL_HSE_EXTC (SYSCLK=72 MHz) | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI (SYSCLK=64 MHz)",
-                "value": "USE_PLL_HSE_EXTC|USE_PLL_HSI",
+                "help": "Mask value : USE_PLL_HSE_XTAL | USE_PLL_HSI (SYSCLK=64 MHz)",
+                "value": "USE_PLL_HSE_XTAL|USE_PLL_HSI",
                 "macro_name": "CLOCK_SOURCE"
             },
             "clock_source_usb": {
@@ -1171,7 +1171,7 @@
         "device_has_add": ["CAN", "SERIAL_FC", "SERIAL_ASYNCH", "FLASH"],
         "device_has_remove": ["LPTICKER"],
         "release_versions": ["2", "5"],
-        "device_name": "STM32F103RB"
+        "device_name": "STM32F103VE"
     },
     "MTB_MXCHIP_EMW3166": {
         "inherits": ["FAMILY_STM32"],
